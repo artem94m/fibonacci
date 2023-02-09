@@ -16,7 +16,7 @@ def parse_args():
     group.add_argument("-n", dest="n", metavar="NTH_NUMBER",
                        type=int, help="n-th Fibonacci number")
 
-    args_parser.add_argument("-o", dest="alg", metavar="ALGORITHM", choices=["N", "LogN"], default="N",
+    args_parser.add_argument("-a", dest="alg", metavar="ALGORITHM", choices=["N", "LogN"], default="N",
                              help="algorithm for calculation (N | LogN). Default: N")
 
     parsed = args_parser.parse_args()
